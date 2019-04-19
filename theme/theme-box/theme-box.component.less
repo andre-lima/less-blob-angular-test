@@ -1,0 +1,16 @@
+@bgc: black;
+
+:host {
+  display: block;
+  background-color: @bgc;
+  color: yellow;
+  height: 100px;
+  max-width: 300px;
+  border: 1px solid @bgc;
+}
+
+.box {
+  background-color: lighten(@bgc, 20%);
+}
+
+@import '../../../theme/special-box/*.less';

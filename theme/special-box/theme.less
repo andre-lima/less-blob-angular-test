@@ -1,6 +1,11 @@
 @bgc: green;
 :host {
   &:after {
+    @media (min-width: 700px) {
+      @bgc: red;
+      color: darken(@bgc, 5%);
+    }
     content: 'grassy';
+    color: darken(@bgc, 5%);
   }
 }
