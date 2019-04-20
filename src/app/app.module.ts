@@ -9,9 +9,9 @@ import { overrideComponents } from '../../theme/override-components';
 
 let genericComponents = [AppComponent, BoxComponent];
 
-genericComponents = genericComponents.filter(component => {
-  return !overrideComponents.includes(component.name);
-});
+// genericComponents = genericComponents.filter(component => {
+//   return !overrideComponents.includes(component.name);
+// });
 
 @NgModule({
   declarations: genericComponents,
@@ -19,4 +19,4 @@ genericComponents = genericComponents.filter(component => {
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
